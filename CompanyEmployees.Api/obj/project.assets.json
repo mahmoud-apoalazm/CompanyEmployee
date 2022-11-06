@@ -892,6 +892,9 @@
       "Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Contracts.dll": {}
         },
@@ -925,6 +928,20 @@
         },
         "runtime": {
           "bin/placeholder/LoggerService.dll": {}
+        }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Contracts": "1.0.0",
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
         }
       }
     }
@@ -2310,6 +2327,11 @@
       "type": "project",
       "path": "../LoggerService/LoggerService.csproj",
       "msbuildProject": "../LoggerService/LoggerService.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2318,6 +2340,7 @@
       "LoggerService >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
       "NLog >= 5.0.5",
+      "Repository >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -2353,6 +2376,9 @@
             },
             "C:\\Users\\mahmo\\source\\repos\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
               "projectPath": "C:\\Users\\mahmo\\source\\repos\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
+            },
+            "C:\\Users\\mahmo\\source\\repos\\CompanyEmployees\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\mahmo\\source\\repos\\CompanyEmployees\\Repository\\Repository.csproj"
             }
           }
         }

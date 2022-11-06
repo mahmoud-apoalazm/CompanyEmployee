@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Contracts
 {
-    internal class IEmployeeRepository
+    public interface IEmployeeRepository
     {
+
     }
 }
