@@ -72,3 +72,5 @@ C:\Users\mahmo\source\repos\CompanyEmployees\CompanyEmployees.Api\bin\Debug\net6
 C:\Users\mahmo\source\repos\CompanyEmployees\CompanyEmployees.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\mahmo\source\repos\CompanyEmployees\CompanyEmployees.Api\bin\Debug\net6.0\Repository.dll
 C:\Users\mahmo\source\repos\CompanyEmployees\CompanyEmployees.Api\bin\Debug\net6.0\Repository.pdb
+C:\Users\mahmo\source\repos\CompanyEmployees\CompanyEmployees.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\mahmo\source\repos\CompanyEmployees\CompanyEmployees.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
