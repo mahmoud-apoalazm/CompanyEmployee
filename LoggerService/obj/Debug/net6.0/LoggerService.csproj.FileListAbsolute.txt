@@ -13,3 +13,5 @@ C:\Users\mahmo\source\repos\CompanyEmployees\LoggerService\obj\Debug\net6.0\Logg
 C:\Users\mahmo\source\repos\CompanyEmployees\LoggerService\obj\Debug\net6.0\refint\LoggerService.dll
 C:\Users\mahmo\source\repos\CompanyEmployees\LoggerService\obj\Debug\net6.0\LoggerService.pdb
 C:\Users\mahmo\source\repos\CompanyEmployees\LoggerService\obj\Debug\net6.0\ref\LoggerService.dll
+C:\Users\mahmo\source\repos\CompanyEmployees\LoggerService\bin\Debug\net6.0\Entities.dll
+C:\Users\mahmo\source\repos\CompanyEmployees\LoggerService\bin\Debug\net6.0\Entities.pdb

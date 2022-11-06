@@ -2,6 +2,7 @@
 using Entities;
 using LoggerService;
 using Microsoft.EntityFrameworkCore;
+using Repository;
 
 namespace CompanyEmployees.Api.Extensions
 {
@@ -19,7 +20,6 @@ namespace CompanyEmployees.Api.Extensions
         public static void ConfigureIISIntegration(this IServiceCollection services) =>
            services.Configure<IISOptions>(options =>
            {
-
            });
 
         public static void ConfigureLoggerService(this IServiceCollection services) =>
@@ -30,6 +30,9 @@ namespace CompanyEmployees.Api.Extensions
             services.AddDbContext<RepositoryContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("sqlConnection"),b=>
             b.MigrationsAssembly("CompanyEmployees.Api")));
+
+        public static void ConfigureRepositoryManager(this IServiceCollection services) =>
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
 
     }
 }
