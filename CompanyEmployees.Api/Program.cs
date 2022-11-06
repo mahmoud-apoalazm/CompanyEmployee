@@ -1,6 +1,8 @@
 using CompanyEmployees.Api.Extensions;
+using Contracts;
 using LoggerService;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.Extensions.Logging;
 using NLog;
 
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(),
@@ -19,6 +21,7 @@ builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
@@ -33,6 +36,8 @@ else
 {
     app.UseHsts();
 }
+ILoggerManager logger= new LoggerManager();
+app.ConfigureExceptionHandler(logger);
 
 app.UseHttpsRedirection();
 
