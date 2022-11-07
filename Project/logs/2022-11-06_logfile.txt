@@ -78,3 +78,4 @@
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
 ClientConnectionId:1e819053-4672-45fe-8330-94c51361f79f
 Error Number:-2,State:0,Class:11
+2022-11-06 21:12:27.4521 INFO Company with id: 3d490a70-94ce-4d15-9494-5248280c2ce2 doesn't exist in the database.
